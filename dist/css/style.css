@@ -91,6 +91,7 @@ legend {
 }
 
 body {
+  position: relative;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -130,6 +131,8 @@ body {
 
 .header {
   padding-top: 10px;
+  position: absolute;
+  width: 100%;
 }
 
 .header_inner {
@@ -189,6 +192,11 @@ body {
   color: #7D808A;
   font-size: 13px;
 }
+.header_phon-link .seagull {
+  position: absolute;
+  top: 135px;
+  left: 100px;
+}
 
 .header_phon-img {
   width: 16px;
@@ -203,30 +211,84 @@ body {
   min-height: 100vh;
   width: 100%;
 }
+.banner .tree-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.banner .tree-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+.banner .clouds {
+  position: absolute;
+  bottom: 68px;
+}
 
 .banner_inner {
+  position: relative;
   display: flex;
   justify-content: space-between;
+  padding-top: 235px;
+}
+
+.banner_info {
+  position: relative;
+  text-align: left;
+  transform: translateY(-65px);
+}
+.banner_info .amber {
+  position: absolute;
+  top: 415px;
+  left: -35px;
+}
+.banner_info .hourse {
+  position: absolute;
+  top: 380px;
+  left: 350px;
+}
+.banner_info .tree {
+  position: absolute;
+  top: 270px;
+  left: -370px;
 }
 
 .banner_info-title {
+  max-width: 730px;
   font-family: "Philosopher", sans-serif;
   font-weight: 700;
   font-size: 57px;
   line-height: 107%;
   color: #000;
+  margin-bottom: 40px;
 }
 
 .banner_info-subtitle {
+  position: relative;
+  max-width: 477px;
+  transform: translateX(50px);
   font-family: "Alegreya Sans", sans-serif;
   font-weight: 400;
   line-height: 140%;
   font-size: 24px;
   color: #646464;
+  margin-bottom: 42px;
 }
 .banner_info-subtitle a {
   font-weight: 700;
   color: #646464;
+}
+.banner_info-subtitle::after {
+  position: absolute;
+  content: "";
+  top: 15px;
+  left: -50px;
+  width: 26px;
+  height: 1px;
+  background-color: #8F8F8F;
 }
 
 .banner_info-btn {
@@ -252,4 +314,8 @@ body {
   z-index: -1;
   border-radius: 5px;
   background: linear-gradient(180deg, rgba(255, 223, 0, 0.4) 0%, #ad9029 100%);
+}
+
+.banner_img {
+  transform: translateX(-35px);
 }

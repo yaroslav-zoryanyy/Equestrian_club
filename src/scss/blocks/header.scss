@@ -1,5 +1,7 @@
 .header{
     padding-top: 10px;
+    position: absolute;
+    width: 100%;
 }
 .header_inner{
     display: flex;
@@ -53,6 +55,11 @@
         right: 0;
         color:#7D808A;
         font-size: 13px;
+    }
+    .seagull{
+        position: absolute;
+        top: 135px;
+        left: 100px;
     }
 }
 .header_phon-img{
