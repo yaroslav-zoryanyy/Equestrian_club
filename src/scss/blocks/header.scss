@@ -163,6 +163,9 @@
     }
 }
 @media (max-width:480px){
+    .header_list{
+        width: 100%;
+    }
     .header_phon-link{
         display: none;
     }

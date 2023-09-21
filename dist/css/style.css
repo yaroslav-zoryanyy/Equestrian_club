@@ -110,17 +110,17 @@ body {
 }
 
 .header_list.active {
-  transform: translate(-35px, 0px);
+  transform: translate(-20px, 0px);
+  display: none;
 }
 
 .header_list.active .clouse {
-  display: block;
+  display: flex;
+  justify-content: end;
 }
 
 .clouse {
   display: none;
-  display: flex;
-  justify-content: end;
 }
 
 .mobile_menu-inner {
@@ -143,11 +143,6 @@ body {
   background-color: #008139;
 }
 
-@media (max-width: 480px) {
-  .header_list {
-    width: 100%;
-  }
-}
 .header {
   padding-top: 10px;
   position: absolute;
@@ -321,6 +316,9 @@ body {
   }
 }
 @media (max-width: 480px) {
+  .header_list {
+    width: 100%;
+  }
   .header_phon-link {
     display: none;
   }

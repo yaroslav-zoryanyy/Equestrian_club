@@ -16,15 +16,16 @@ body{
     display: none;
 }
 .header_list.active{
-    transform: translate(-35px,0px);
+    transform: translate(-20px,0px);
+    display: none;
 }
 .header_list.active .clouse{
-    display: block;
+    display: flex;
+    justify-content: end;
 }
 .clouse{
     display: none;
-    display: flex;
-    justify-content: end;
+    
 }
 .mobile_menu-inner{
     display: flex;
@@ -42,10 +43,5 @@ body{
         height: 2px;
         margin-bottom: 2px;
         background-color: $green;
-    }
-}
-@media (max-width:480px) {
-    .header_list{
-        width: 100%;
     }
 }
