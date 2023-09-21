@@ -109,6 +109,20 @@ body {
   display: none;
 }
 
+.header_list.active {
+  transform: translate(-35px, 0px);
+}
+
+.header_list.active .clouse {
+  display: block;
+}
+
+.clouse {
+  display: none;
+  display: flex;
+  justify-content: end;
+}
+
 .mobile_menu-inner {
   display: flex;
   align-items: center;
@@ -129,6 +143,11 @@ body {
   background-color: #008139;
 }
 
+@media (max-width: 480px) {
+  .header_list {
+    width: 100%;
+  }
+}
 .header {
   padding-top: 10px;
   position: absolute;
@@ -263,6 +282,7 @@ body {
   }
   .header_list {
     position: absolute;
+    z-index: 2;
     top: 0;
     flex-direction: column;
     text-align: center;

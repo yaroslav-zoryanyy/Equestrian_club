@@ -124,6 +124,7 @@
     }
     .header_list{
         position: absolute;
+        z-index: 2;
         top: 0;
         flex-direction: column;
         text-align: center;
