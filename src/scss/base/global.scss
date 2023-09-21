@@ -19,17 +19,17 @@ body{
     display: flex;
     align-items: center;
     gap: 0 5px;
-    padding: 6px 10px 8px 10px;
+    padding: 6px 10px 6px 10px;
     border-radius: 3px;
     border: 1px solid $green;
 }
 .mobile_menu-icon{
     display: flex;
     flex-direction: column;
-    margin-bottom: 2px;
     span{
         width: 10px;
         height: 2px;
+        margin-bottom: 2px;
         background-color: $green;
     }
 }
