@@ -6,6 +6,8 @@ body{
     font-weight: 400;
     font-size: 16px;
     color: black;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 .container{
     max-width: 1214px;
@@ -16,16 +18,18 @@ body{
     display: none;
 }
 .header_list.active{
-    transform: translate(-20px,0px);
-    display: none;
+    left: 0;
 }
 .header_list.active .clouse{
-    display: flex;
-    justify-content: end;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding: 10px;
+    cursor: pointer;
 }
 .clouse{
     display: none;
-    
 }
 .mobile_menu-inner{
     display: flex;
@@ -44,4 +48,10 @@ body{
         margin-bottom: 2px;
         background-color: $green;
     }
+}
+@media(max-width:480px){
+    .header_list.active{
+        width: 100%;
+    }
+    
 }

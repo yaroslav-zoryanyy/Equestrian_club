@@ -1,53 +1,22 @@
 .banner{
+    position: relative;
     background: url(/img/banner-fon.png);
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    min-height: 100vh;
+    background-position: top;
     width: 100%;
-    .tree-left{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        z-index: 1;
-    }
-    .tree-right{
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        z-index: 1;
-    }
-    .clouds{
-        position: absolute;
-        bottom: 15px;
-    }
+    max-height: 860px;
 }
 .banner_inner{
     position: relative;
     display: flex;
     justify-content: space-between;
     padding-top: 235px;
-
 }
 .banner_info{
     position: relative;
     text-align: left;
     transform: translateY(-99px);
-    .amber{
-        position: absolute;
-        top: 415px;
-        left: -35px;
-    }
-    .hourse{
-        position: absolute;
-        top: 380px;
-        left: 350px;
-    }
-    .tree{
-        position: absolute;
-        top: 270px;
-        left: -370px;
-    }
 }
 .banner_info-title{
     max-width: 730px;
@@ -106,10 +75,72 @@
         background: linear-gradient(180deg, #ffdf0066 0%, #ad9029 100%);
     }
 }
-.banner_img{
-    transform: translateX(-35px);
+.banner_img {
+    transform: translate(0px,5px);
 }
-@media (max-width:1400px) {
+.seagull {
+    position: absolute;
+    top: 100px;
+    right: 200px;
+}
+.tree {
+    position: absolute;
+    bottom: 50px;
+    left: 15px;
+}
+.amber {
+    position: absolute;
+    bottom: 5px;
+    left: 365px;
+}
+.hourse {
+    position: absolute;
+    bottom: 30px;
+    left: 735px;
+}
+.tree-left{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+.tree-right{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+.clouds {
+    position: absolute;
+    bottom: -40px;
+}
+@media (max-width:1800px){
+    .tree {
+        bottom: 100px;
+    }
+    .amber {
+        bottom: 50px;
+    }
+    .hourse {
+        bottom: 95px;
+    }
+    .banner_img {
+        transform: translate(115px, -35px);
+    }
+    .clouds {
+        bottom: 0px;
+    }
+}
+@media (max-width:1600px){
+    .clouds {
+        bottom: 35px;
+    }
+    .seagull {
+        top: 80px;
+        right: 20px;
+    }
+}
+@media (max-width:1450px) {
     .banner_info-title {
         font-size: 47px;
         margin-bottom: 30px;
@@ -128,61 +159,68 @@
         height: 437px;
         transform: translate(20px, 60px);
     }
-    .banner .tree-left {
-        max-width: 100px;
+    .banner_img {
+        transform: translate(0px, 0px);
     }
-    .banner .tree-right {
-        max-width: 61px;
+    .seagull{
+        width: 165px;
+        height: 52px;
+        right: 50px;
     }
-    .banner .clouds {
-        bottom: 0px;
+    .tree {
+        width: 212px;
+        height: 157px;
+        left: 45px;
+        bottom: 90px;
     }
-    .banner_info .hourse {
-        position: absolute;
-        top: 395px;
-        left: 450px;
-        width: 155px;
-        height: 136px;
+    .amber {
+        width: 259px;
+        height: 116px;
+        left: 245px;
+        bottom: 90px;
     }
-    .banner_info .amber {
-        position: absolute;
-        top: 385px;
-        left: 160px;
-        width: 301px;
-        height: 135px;
+    .hourse {
+        width: 114px;
+        height: 111px;
+        left: 485px;
+        bottom: 100px;
     }
-    .banner_info .tree {
-        position: absolute;
-        top: 315px;
-        left: -40px;
-        width: 230px;
-        height: 170px;
+    .tree-left{
+        width: 100px;
+        height: 207px;
+    }
+    .tree-right{
+        width: 61px;
+        height: 229px;
+    }
+    .clouds {
+        bottom: 33px;
+    }
+}
+@media (max-width:1300px){
+    .seagull {
+        right: 65px;
+        top: 130px;
+    }
+    .tree {
+        bottom: 115px;
+    }
+    .amber {
+        bottom: 120px;
+    }
+    .hourse {
+        bottom: 130px;
+    }
+    .banner_img {
+        transform: translate(0px, -20px);
+    }
+    .clouds {
+        bottom: 60px;
     }
 }
 @media (max-width:1000px){
-    .banner_inner {
-        padding-top: 110px;
-    }
     .banner_info {
-            transform: translateY(45px);
-         .tree{
-            width: 158px;
-            height: 117px;
-            top: 360px;
-            left: -55px;
-        }
-        .amber{
-            width: 207px;
-            height: 93px;
-            top: 375px;
-            left: 95px;
-        }
-        .hourse{
-            width: 114px;
-            height: 111px;
-            top: 355px;
-            left: 280px;
-        }
+        transform: translateY(-142px);
     }
     .banner_info-title{
         font-size: 37px;
@@ -208,155 +246,178 @@
         font-size: 11px;
         padding: 10px 50px;
     }
-    .tree-right{
-        width: 42px;
-    }
-    .tree-left{
-        width: 68px;
-    }
     .banner_img {
         width: 368px;
         height: 371px;
-        transform: translate(-10px, 210px);
+        transform: translate(10px, -55px);
     }
-
+    .seagull {
+        width: 126px;
+        height: 40px;
+        top: 95px;
+        right: 40px;
+    }
+    .tree {
+        width: 158px;
+        height: 117px;
+        left: -15px;
+    }
+    .amber {
+        width: 207px;
+        height: 93px;
+        left: 130px;
+        bottom: 110px;
+    }
+    .hourse {
+        width: 114px;
+        height: 111px;
+        bottom: 110px;
+        left: 300px;
+    }
+    .tree-left{
+        width: 68px;
+        height: 141px;
+        bottom: 20px;
+    }
+    .tree-right{
+        width: 42px;
+        height: 160px;
+        bottom: 20px;
+    }
+    .clouds {
+        bottom: 55px;
+    }
 }
 @media (max-width:768px){
-    .banner_inner{
-        display: block;
-        padding-top: 110px;
-    }
-   .banner_info{
-    text-align: center;
-        .banner_info-title,
-        .banner_info-subtitle{
-            width: 480px;
-            max-width: 100%;
-            margin: 0 auto;
-            margin-bottom: 20px;
-        }
-        .banner_info-title{
-            font-size: 43px;
-        }
-        .banner_info-subtitle{
-            padding-top:6px;
-            font-size: 16px;
-            transform: translateX(0px);
-            &::after{
-                top: -5px;
-                left: 234px;
-            }
-        }
-   }
-   .banner_img {
-        position: absolute;
-        bottom: -120px;
-        right: 0;
-        width: 240px;
-        height: 240px;
-}
-   .banner_info{
-        .tree {
-            top: 366px;
-        }
-        .amber {
-            top: 392px;
-        }
-        .hourse {
-            top: 380px;
-        }
-    }
-}
-@media (max-width:680px){
-    .banner_info{
-        .tree {
-            top: 378px;
-            left: -75px;
-        }
-        .amber {
-            top: 410px;
-            left: -5px;
-        }
-        .hourse {
-            top: 411px;
-            left: 175px;
-        }
-    }
-    .banner_img {
-        right: -25px;
-    }
-}
-@media (max-width:550px){
     .banner{
         height: 677px;
         min-height: auto;
     }
-    .tree-right{
-        width: 34px;
+    .banner_inner{
+        display: block;
+    }
+   .banner_info{
+        text-align: center;
+        transform: translateY(-90px);
+   }
+    .banner_info-title,
+    .banner_info-subtitle{
+        width: 480px;
+        max-width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .banner_info-title{
+        font-size: 33px;
+    }
+    .banner_info-subtitle{
+        padding-top:6px;
+        font-size: 16px;
+        transform: translateX(0px);
+        &::after{
+            top: -5px;
+            left: 234px;
+        }
+    }
+    .banner_img {
+        position: absolute;
+        bottom: -195px;
+        right: 0;
+        width: 240px;
+        height: 240px;
+    }
+    .seagull {
+        width: 101px;
+        height: 32px;
+        top: 90px;
+        left: 40px;
+    }
+    .tree {
+        width: 158px;
+        height: 117px;
+        left: -75px;
+    }
+    .amber {
+        width: 207px;
+        height: 93px;
+        left: 0px;
+        bottom: 100px;
+    }
+    .hourse {
+        width: 93px;
+        height: 90px;
+        bottom: 117px;
+        left: 200px;
     }
     .tree-left{
         width: 44px;
+        height: 93px;
+        bottom: 70px;
     }
-    .banner {
-        .clouds {
-            bottom: 0px;
-        }
+    .tree-right{
+        width: 34px;
+        height: 131px;
+        bottom: 70px;
     }
-    .banner_info{
-        .tree {
-            left: -96px;
-        }
-        .amber {
-            left: -25px;
-        }
-        .hourse {
-            top: 385px;
-            left: 160px;
-        }
-        .banner_info-title{
-            font-size: 33px;
-        }
-        .banner_info-subtitle{
-            font-size: 16px;
-            width: 428px;
-            &::after{
-                left: 205px;
-            }
+    .clouds {
+        bottom: 64px;
+    }
+}
+@media (max-width:550px){
+    .banner{
+        height: 660px;
+    }
+    .banner_info-title{
+        font-size: 33px;
+    }
+    .banner_info-subtitle{
+        font-size: 16px;
+        width: 428px;
+        &::after{
+            left: 205px;
         }
     }
     .banner_img{
         width: 189px;
-        height: 190px;      
+        height: 190px; 
+        bottom: -185px;     
+    }
+    .clouds {
+        bottom: 62px;
     }
 }
 @media (max-width:480px){
-    .banner_info{
-        .banner_info-title{
-            font-size: 24px;
-            width: 320px;
-        }
-        .banner_info-subtitle{
-            font-size: 13px;
-            width: 320px;
-            margin-bottom: 15px;
-            &::after{
-                left: 150px;
-            }
-        }
-        .tree {
-            left: -130px;
-        }
-        .amber {
-            left: -50px;
-        }
-        .hourse {
-            display: none;
+    .banner{
+        height: 630px;
+    }
+    .banner_info-title{
+        font-size: 24px;
+        width: 320px;
+    }
+    .banner_info-subtitle{
+        font-size: 13px;
+        width: 320px;
+        margin-bottom: 15px;
+        &::after{
+            left: 150px;
         }
     }
-    .banner_img{
+    .banner_img {
         width: 205px;
         height: 198px;
-        bottom: -165px;
+        bottom: -185px;
+    }
+    .tree {
+        left: -110px;
+    }
+    .amber {
+        left: -40px;
+    }
+    .hourse {
+        display: none;
+    }
+    .clouds {
+        bottom: 60px;
     }
 }
         
