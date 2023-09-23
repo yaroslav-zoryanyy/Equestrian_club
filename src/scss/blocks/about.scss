@@ -1,0 +1,121 @@
+.about_inner{
+    padding-top: 60px;
+}
+.about_blocs{
+    display: flex;
+    margin-top: 70px;
+    gap: 0 20px;
+}
+.about_bloc-left{
+    width: 871px;
+    height: 529px;
+}
+.about_bloc-right{
+    display: flex;
+    flex-direction: column;
+    gap: 40px 0;
+}
+.green_number{
+    font-family: $font-Philosopher;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 160%;
+    color: #008139;
+}
+.about_subtitle-accent{
+    max-width: 275px;
+    font-family: $font-main;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    color: #0B0B0B;
+}
+.about_blocright-top{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.about_subtitle{
+    width: 570px;
+    font-family: $font-main;
+    font-size: 15px;
+    line-height: 28px;
+    color: #7E7E7E;
+}
+.about_subtitle-mobile{
+    display: none;
+}
+@media (max-width:1000px){
+    .about_inner {
+        padding-top: 40px;
+    }
+    .about_blocs {
+        margin-top: 40px;
+    }
+    .about_bloc-left {
+        width: 517px;
+        height: auto;
+        margin-bottom: 30px;
+    }
+    .green_number{
+        font-size: 32px;
+    }
+    .about_subtitle-accent {
+        font-size: 15px;
+    }
+    .about_blocright-top {
+        gap: 20px;
+    }
+    .about_subtitle {
+        display: none;
+    }
+    .about_subtitle-mobile{
+        display: block;
+        width: 100%;
+        font-size: 13px;
+    }
+}
+@media (max-width:650px){
+    .about_inner {
+        padding-top: 0px;
+    }
+    .about_blocs{
+        margin-top: 40px;
+    }
+    .about_bloc-left {
+        display: none;
+    }
+    .about_bloc-right {
+        text-align: center;
+    }
+    .about_blocright-top {
+        gap: 30px 20px;
+    }
+    .green_number {
+        font-size: 27px;
+    }
+    .about_subtitle-accent {
+        font-size: 12px;
+    }
+}
+@media (max-width:480px){
+    .about_blocs {
+        display: block;
+        margin-top: 30px;
+    }
+    .about_blocright-top {
+        display: flex;
+        flex-direction: column;
+        gap: 35px 0 ;
+        text-align: center;
+    }
+    .green_number {
+        line-height: 18px;
+    }
+    .about_subtitle-accent {
+        max-width: 100%;
+    }
+    .about_subtitle-mobile {
+        font-size: 12px;
+        line-height: 19px;
+    }
+}

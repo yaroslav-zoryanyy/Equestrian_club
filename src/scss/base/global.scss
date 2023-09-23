@@ -14,6 +14,13 @@ body{
     padding: 0 22px;
     margin: 0 auto;
 }
+.title{
+    text-align: center;
+    font-family: $font-Philosopher;
+    font-size: 40px;
+    line-height: 36px;
+    color: #363434;
+}
 .mobile_menu{
     display: none;
 }
@@ -49,9 +56,21 @@ body{
         background-color: $green;
     }
 }
+@media(max-width:1300px){
+    .title{
+        font-size: 30px;
+    }
+}
+@media (max-width:768px){
+    .title{
+        font-size: 27px;
+    }
+}
 @media(max-width:480px){
+    .title{
+        font-size: 21px;
+    }
     .header_list.active{
         width: 100%;
-    }
-    
+    }   
 }
