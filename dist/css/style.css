@@ -1099,7 +1099,7 @@ body {
 
 .directions-bottom1 {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
 }
 
 @media (max-width: 1800px) {
@@ -1226,4 +1226,21 @@ body {
     bottom: 0;
     right: -32px;
   }
+}
+.gallery_inner {
+  padding: 150px 0 140px;
+}
+
+.visitors_title {
+  margin-bottom: 70px;
+}
+
+.visitors_slide-top {
+  margin-bottom: 5px;
+}
+
+.visitors_slide-top,
+.visitors_slide-bottom {
+  display: flex;
+  gap: 5px;
 }
