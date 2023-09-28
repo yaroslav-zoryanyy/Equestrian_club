@@ -14,14 +14,11 @@
 		</main>
 		@@include('html/footer.html',{})
 		<script src="js/app.min.js"></script>
-		<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
 		<script type="module">
 			import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
-		  
-			const swiper = new Swiper('.swiper',{
+			const swiper = new Swiper('.visitors_swiper',{
 				grabCursor: true,
 				slidesPerView: 1,
-				slidesPerView: "auto",
 				navigation: {
 					nextEl: ".next",
 					prevEl: ".prev",
@@ -29,8 +26,24 @@
 				pagination: {
 					el: ".swiper-pagination",
 					clickable: true,
+					},
+				breakpoints: {
+					320: {
+						pagination: {
+						el: ".swiper-scrollbar",
+						clickable: true,
+						type: "progressbar",
+					},
+					},
+					1000: {
+						pagination: {
+						el: ".swiper-pagination",
+						clickable: true,
+						// dynamicBullets: true,
+					},
+					},
 				},
-		});
+			});
 		  </script>
 	</body>
 </html>
