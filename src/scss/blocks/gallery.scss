@@ -1,6 +1,9 @@
 .gallery_inner{
     padding: 150px 0 140px;
 }
+.visitors{
+    margin-bottom: 120px;
+}
 .visitors_title{
     margin-bottom: 70px;
 }
@@ -11,11 +14,16 @@
     .swiper-pagination-progressbar.swiper-pagination-horizontal{
         width: 96px;
         height: 8px;
+        border-radius: 5px;
     }
     .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal,
     .swiper-pagination-custom, .swiper-pagination-fraction {
         position: absolute;
         bottom: 0;
+    }
+    .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+        background:#FFC700 ;
+        border-radius: 5px;
     }
 }
 .visitors_wrapper{
@@ -49,17 +57,17 @@
 .navigation_arrow{
     display: flex;
     justify-content: center;
-    transform: translateY(25px);
+    transform: translateY(15px);
     gap: 0 130px;
 }
-// .prev,
-// .next{
-//     position: relative;
-//     z-index: 11;
-// }
+//// Horses
+
 @media (max-width:1000px) {
     .gallery_inner{
         padding: 107px 0 115px;
+    }
+    .visitors{
+        margin-bottom: 90px;
     }
     .visitors_title{
         margin-bottom: 40px;
@@ -80,6 +88,9 @@
     .visitors_slide-top,
     .visitors_slide-bottom{
         gap: 3px;
+    }
+    .navigation_arrow{
+        transform: translateY(25px);
     }
 }
 @media (max-width:768px) {
@@ -117,6 +128,8 @@
         grid-template-columns: 1fr 1fr ;
         grid-template-rows: 1fr 1fr 1fr ;
         gap: 1px;
-        
+    }
+    .visitors{
+        margin-bottom: 70px;
     }
 }

@@ -424,11 +424,27 @@
                         <div class="prev"><img src="img/left.png" alt="arrow"></div>
                         <div class="next"><img src="img/right.png" alt="arrow"></div>
                     </div>
-                    <div class="swiper-pagination visitors-pagination"></div>
                     <div class="swiper-scrollbar visitors-scrollbar"></div>
+                    <div class="swiper-pagination visitors-pagination"></div>
                 </div>
             </div>
-        <div class="horses"></div>
+        </div>
+        <div class="horses">
+            <h2 class="title horses_title">Наши лошади</h2>
+            <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="img/visitors-img1.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="img/visitors-img1.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="img/visitors-img1.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="img/visitors-img1.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="img/visitors-img1.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="img/visitors-img1.jpg" alt=""></div>
+                  <div class="swiper-slide">Slide 7</div>
+                  <div class="swiper-slide">Slide 8</div>
+                  <div class="swiper-slide">Slide 9</div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 		</main>
@@ -438,6 +454,7 @@
 			import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
 			const swiper = new Swiper('.visitors_swiper',{
 				grabCursor: true,
+				zoom: true,
 				slidesPerView: 1,
 				navigation: {
 					nextEl: ".next",
@@ -459,10 +476,25 @@
 						pagination: {
 						el: ".swiper-pagination",
 						clickable: true,
-						// dynamicBullets: true,
-					},
+						},
 					},
 				},
+			});
+			var swiper2 = new Swiper(".mySwiper2", {
+				grabCursor: true,
+				effect: "creative",
+				slidesPerView: 1,
+				spaceBetween: 5,
+				creativeEffect: {
+				prev: {
+					shadow: true,
+					translate: ["-120%", 0, -300]
+				},
+				next: {
+					shadow: true,
+					translate: ["120%", 0, -500]
+				}
+				}
 			});
 		  </script>
 	</body>

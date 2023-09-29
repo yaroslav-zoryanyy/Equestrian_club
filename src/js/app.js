@@ -18,6 +18,36 @@ flsFunctions.isWebp();
 //     },
 //   });
 
+
+			const swiper = new Swiper('.visitors_swiper',{
+				grabCursor: true,
+				slidesPerView: 1,
+				navigation: {
+					nextEl: ".next",
+					prevEl: ".prev",
+				},
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+					},
+				breakpoints: {
+					320: {
+						pagination: {
+						el: ".swiper-scrollbar",
+						clickable: true,
+						type: "progressbar",
+					},
+					},
+					1000: {
+						pagination: {
+						el: ".swiper-pagination",
+						clickable: true,
+						// dynamicBullets: true,
+					},
+					},
+				},
+			});
+
 //Мобільне меню
 let Menu = document.querySelectorAll(".burger_menu");
 const List = document.querySelector(".header_list");
