@@ -431,20 +431,74 @@
         </div>
         <div class="horses">
             <h2 class="title horses_title">Наши лошади</h2>
-            <div class="swiper mySwiper2">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img src="img/visitors-img1.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="img/visitors-img1.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="img/visitors-img1.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="img/visitors-img1.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="img/visitors-img1.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="img/visitors-img1.jpg" alt=""></div>
-                  <div class="swiper-slide">Slide 7</div>
-                  <div class="swiper-slide">Slide 8</div>
-                  <div class="swiper-slide">Slide 9</div>
+            <div class="swiper horses_swiper">
+                <div class="swiper-wrapper horses_wrapper">
+                    <div class="swiper-slide horses_slide">
+                        <div class="horses_slide-inner">
+                            <img src="img/horses-img1.png" alt="hors" class="horses-img">    
+                            <h4 class="horses_slide-title">Жазель</h4>
+                            <p class="horses_slide-subtitle">Уроки профессиональной верховой езды для любителей и начинающих</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide horses_slide">
+                        <div class="horses_slide-inner">
+                            <img src="img/horses-img2.png" alt="hors" class="horses-img">    
+                            <h4 class="horses_slide-title">Юджин</h4>
+                            <p class="horses_slide-subtitle">Уроки профессиональной верховой езды для любителей и начинающих</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide horses_slide">
+                        <div class="horses_slide-inner">
+                            <img src="img/horses-img3.png" alt="hors" class="horses-img">    
+                            <h4 class="horses_slide-title">Мелисса</h4>
+                            <p class="horses_slide-subtitle">Уроки профессиональной верховой езды для любителей и начинающих</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide horses_slide">
+                        <div class="horses_slide-inner">
+                            <img src="img/horses-img4.png" alt="hors" class="horses-img">    
+                            <h4 class="horses_slide-title">Циан</h4>
+                            <p class="horses_slide-subtitle">Уроки профессиональной верховой езды для любителей и начинающих</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide horses_slide"> 
+                        <div class="horses_slide-inner">
+                            <img src="img/horses-img5.png" alt="hors" class="horses-img">    
+                            <h4 class="horses_slide-title">Хесана</h4>
+                            <p class="horses_slide-subtitle">Уроки профессиональной верховой езды для любителей и начинающих</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide horses_slide">
+                        <div class="horses_slide-inner">
+                            <img src="img/horses-img1.png" alt="hors" class="horses-img">    
+                            <h4 class="horses_slide-title">Жазель</h4>
+                            <p class="horses_slide-subtitle">Уроки профессиональной верховой езды для любителей и начинающих</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide horses_slide">
+                        <div class="horses_slide-inner">
+                            <img src="img/horses-img2.png" alt="hors" class="horses-img">    
+                            <h4 class="horses_slide-title">Юджин</h4>
+                            <p class="horses_slide-subtitle">Уроки профессиональной верховой езды для любителей и начинающих</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide horses_slide">
+                        <div class="horses_slide-inner">
+                            <img src="img/horses-img3.png" alt="hors" class="horses-img">    
+                            <h4 class="horses_slide-title">Мелисса</h4>
+                            <p class="horses_slide-subtitle">Уроки профессиональной верховой езды для любителей и начинающих</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation navigation_horses">
+                    <div class="navigation_arrow horses_arrow">
+                        <div class="horses_prev"><img src="img/left.png" alt="arrow"></div>
+                        <div class="horses_next"><img src="img/right.png" alt="arrow"></div>
+                    </div>
+                    <div class="swiper-scrollbar horses-scrollbar"></div>
+                    <div class="swiper-pagination horses-pagination"></div>
                 </div>
             </div>
-        </div>
     </div>
 </section>
 		</main>
@@ -455,46 +509,61 @@
 			const swiper = new Swiper('.visitors_swiper',{
 				grabCursor: true,
 				zoom: true,
+				loop:true,
 				slidesPerView: 1,
 				navigation: {
 					nextEl: ".next",
 					prevEl: ".prev",
 				},
 				pagination: {
-					el: ".swiper-pagination",
+					el: ".visitors-pagination",
 					clickable: true,
 					},
 				breakpoints: {
 					320: {
 						pagination: {
-						el: ".swiper-scrollbar",
+						el: ".visitors-scrollbar",
 						clickable: true,
 						type: "progressbar",
 					},
 					},
 					1000: {
 						pagination: {
-						el: ".swiper-pagination",
+						el: ".visitors-pagination",
 						clickable: true,
 						},
 					},
 				},
 			});
-			var swiper2 = new Swiper(".mySwiper2", {
+			var swiper2 = new Swiper(".horses_swiper", {
 				grabCursor: true,
-				effect: "creative",
-				slidesPerView: 1,
-				spaceBetween: 5,
-				creativeEffect: {
-				prev: {
-					shadow: true,
-					translate: ["-120%", 0, -300]
+				initialSlide: 2,
+				slidesPerView: 5,
+				centeredSlides: true,
+				spaceBetween: 30,
+				navigation: {
+					nextEl: ".horses_next",
+					prevEl: ".horses_prev",
 				},
-				next: {
-					shadow: true,
-					translate: ["120%", 0, -500]
-				}
-				}
+				pagination: {
+					el: ".horses-pagination",
+					clickable: true,
+				},
+				breakpoints: {
+					320: {
+						pagination: {
+						el: ".horses-scrollbar",
+						clickable: true,
+						type: "progressbar",
+					},
+					},
+					1000: {
+						pagination: {
+						el: ".horses-pagination",
+						clickable: true,
+						},
+					},
+				},
 			});
 		  </script>
 	</body>

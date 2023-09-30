@@ -19,46 +19,61 @@
 			const swiper = new Swiper('.visitors_swiper',{
 				grabCursor: true,
 				zoom: true,
+				loop:true,
 				slidesPerView: 1,
 				navigation: {
 					nextEl: ".next",
 					prevEl: ".prev",
 				},
 				pagination: {
-					el: ".swiper-pagination",
+					el: ".visitors-pagination",
 					clickable: true,
 					},
 				breakpoints: {
 					320: {
 						pagination: {
-						el: ".swiper-scrollbar",
+						el: ".visitors-scrollbar",
 						clickable: true,
 						type: "progressbar",
 					},
 					},
 					1000: {
 						pagination: {
-						el: ".swiper-pagination",
+						el: ".visitors-pagination",
 						clickable: true,
 						},
 					},
 				},
 			});
-			var swiper2 = new Swiper(".mySwiper2", {
+			var swiper2 = new Swiper(".horses_swiper", {
 				grabCursor: true,
-				effect: "creative",
-				slidesPerView: 1,
-				spaceBetween: 5,
-				creativeEffect: {
-				prev: {
-					shadow: true,
-					translate: ["-120%", 0, -300]
+				initialSlide: 2,
+				slidesPerView: 5,
+				centeredSlides: true,
+				spaceBetween: 30,
+				navigation: {
+					nextEl: ".horses_next",
+					prevEl: ".horses_prev",
 				},
-				next: {
-					shadow: true,
-					translate: ["120%", 0, -500]
-				}
-				}
+				pagination: {
+					el: ".horses-pagination",
+					clickable: true,
+				},
+				breakpoints: {
+					320: {
+						pagination: {
+						el: ".horses-scrollbar",
+						clickable: true,
+						type: "progressbar",
+					},
+					},
+					1000: {
+						pagination: {
+						el: ".horses-pagination",
+						clickable: true,
+						},
+					},
+				},
 			});
 		  </script>
 	</body>

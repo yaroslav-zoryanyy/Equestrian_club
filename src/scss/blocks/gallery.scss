@@ -20,6 +20,7 @@
     .swiper-pagination-custom, .swiper-pagination-fraction {
         position: absolute;
         bottom: 0;
+        z-index: -1;
     }
     .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
         background:#FFC700 ;
@@ -47,7 +48,7 @@
     bottom: 20px;
     left: 50%;
     margin: -25px 0 0 -115px;
-    z-index: 2;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,11 +58,65 @@
 .navigation_arrow{
     display: flex;
     justify-content: center;
-    transform: translateY(15px);
+    transform: translateY(10px);
     gap: 0 130px;
 }
 //// Horses
-
+.swiper.horses_swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden{
+    overflow-y: visible;
+}
+.swiper.horses_swiper .swiper-slide{
+    transition: transform 0.3s ease-in;
+    opacity: 0.5;
+}
+.swiper.horses_swiper .swiper-slide-prev,
+.swiper.horses_swiper .swiper-slide-active,
+.swiper.horses_swiper .swiper-slide-next{
+    transform: translateY(40px); 
+    opacity: 1;
+}
+.horses_title{
+    margin-bottom: 95px;
+}
+.horses_slide-inner{
+    padding: 0px 25px 45px 25px;
+    border-radius: 5px;
+    border: 1px solid #EAEAEA;
+    background: #FFF;
+    box-shadow: 0px 14px 30px 0px rgba(0, 0, 0, 0.07);
+}
+.horses-img{
+    display: block;
+    border-radius: 5px;
+    transform: translateY(-25px);
+}
+.horses_slide-title{
+    font-weight: 500;
+    font-size: 23px;
+    text-align: center;
+    color: #363434;
+    margin-bottom: 50px;
+}
+.horses_slide-subtitle{
+    position: relative;
+    max-width: 305px;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: center;
+    color: #7E7E7E;
+    &::after{
+        position: absolute;
+        content: "";
+        width: 26px;
+        height: 1px;
+        background: #008139;
+        top: -25px;
+        left: 46%;
+    }
+}
+.navigation_horses{
+    bottom: -120px;
+}
 @media (max-width:1000px) {
     .gallery_inner{
         padding: 107px 0 115px;
