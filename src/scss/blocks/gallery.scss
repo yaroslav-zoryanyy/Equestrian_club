@@ -1,3 +1,6 @@
+.gallery{
+    margin-bottom: 140px;
+}
 .gallery_inner{
     padding: 150px 0 140px;
 }
@@ -192,6 +195,9 @@
     }
 }
 @media (max-width:768px) {
+    .gallery {
+        margin-bottom: 60px;
+    }
     .gallery_inner{
         padding: 56px 0 61px;
     }
