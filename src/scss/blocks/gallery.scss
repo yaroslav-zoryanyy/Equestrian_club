@@ -2,7 +2,7 @@
     padding: 150px 0 140px;
 }
 .visitors{
-    margin-bottom: 120px;
+    margin-bottom: 150px;
 }
 .visitors_title{
     margin-bottom: 70px;
@@ -117,6 +117,29 @@
 .navigation_horses{
     bottom: -120px;
 }
+@media (max-width:1300px){
+    .visitors{
+        margin-bottom: 120px;
+    }
+    .horses_title{
+        margin-bottom: 65px;
+    }
+    .swiper.horses_swiper .swiper-slide{
+        opacity: 1;
+    }
+    .swiper.horses_swiper .swiper-slide-prev,
+    .swiper.horses_swiper .swiper-slide-active,
+    .swiper.horses_swiper .swiper-slide-next{
+        transform: translateY(0px); 
+    }
+    .horses_slide-title{
+        font-size: 15px;
+        line-height: 15px;
+    }
+    .horses_slide-subtitle{
+        font-size: 14px;
+    }
+}
 @media (max-width:1000px) {
     .gallery_inner{
         padding: 107px 0 115px;
@@ -147,6 +170,26 @@
     .navigation_arrow{
         transform: translateY(25px);
     }
+    .visitors{
+        margin-bottom: 90px;
+    }
+    .horses_slide-inner{
+        padding: 0px 16px 31px 17px;
+    }
+    .horses_slide-title{
+        margin-bottom: 30px;
+    }
+    .horses_slide-subtitle{
+        font-size: 12px;
+        line-height: 18px;
+        &::after{
+            top: -15px;
+            left: 45%;
+        }
+    }
+    .navigation_horses {
+        bottom: -40px;
+    }
 }
 @media (max-width:768px) {
     .gallery_inner{
@@ -176,6 +219,26 @@
     .visitors-img{
         display: block;
     }
+    .horses_title {
+        margin-bottom: 60px;
+    }
+    .horses-img {
+        transform: translateY(-20px);
+    }
+    .horses_slide-inner {
+        padding: 0px 15px 14px 15px;
+    }
+    .horses_slide-title{
+        margin-bottom: 20px;
+    }
+    .horses_slide-subtitle{
+        font-size: 13px;
+        line-height: 20px;
+        &::after{
+            top: -10px;
+            left: 45%;
+        }
+    }
 }
 @media (max-width:480px) {
     .visitors_slide-top,
@@ -186,5 +249,8 @@
     }
     .visitors{
         margin-bottom: 70px;
+    }
+    .horses_title {
+        margin-bottom: 55px;
     }
 }
