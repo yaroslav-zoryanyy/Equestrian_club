@@ -18,36 +18,6 @@ flsFunctions.isWebp();
 //     },
 //   });
 
-
-			const swiper = new Swiper('.visitors_swiper',{
-				grabCursor: true,
-				slidesPerView: 1,
-				navigation: {
-					nextEl: ".next",
-					prevEl: ".prev",
-				},
-				pagination: {
-					el: ".swiper-pagination",
-					clickable: true,
-					},
-				breakpoints: {
-					320: {
-						pagination: {
-						el: ".swiper-scrollbar",
-						clickable: true,
-						type: "progressbar",
-					},
-					},
-					1000: {
-						pagination: {
-						el: ".swiper-pagination",
-						clickable: true,
-						// dynamicBullets: true,
-					},
-					},
-				},
-			});
-
 //Мобільне меню
 let Menu = document.querySelectorAll(".burger_menu");
 const List = document.querySelector(".header_list");
@@ -56,3 +26,57 @@ Menu.forEach(function(item){
         List.classList.toggle('active');
     });
 });
+//Акордеон (тестовий)
+// const reviewsBtn = document.querySelectorAll(".continue");
+// const hidden = document.querySelectorAll(".hidden");
+// reviewsBtn.forEach(function(item){
+//     item.addEventListener("click",function(){
+//         let currentBtn = item;
+//         let TabId = currentBtn.getAttribute("data-tab");
+//         let currentTab = document.querySelector(TabId);
+//         if( ! currentTab.classList.contains('active')){
+//             reviewsBtn.forEach(function(item){
+//                 item.classList.remove("active");
+//             });
+//             hidden.forEach(function(item){
+//                 item.classList.remove("no-hidden");
+//             });
+// 			currentBtn.classList.add("active");
+// 			currentTab.classList.add("no-hidden");
+// 			currentBtn.addEventListener("click",function(){
+// 				if(	currentBtn.classList.contains('active')){
+// 					currentBtn.classList.remove("active");
+// 					currentTab.classList.remove("no-hidden");
+// 				}else{
+// 					currentBtn.classList.add("active");
+// 					currentTab.classList.add("no-hidden");
+// 				}
+// 			});
+//         };
+//     });
+// } );
+const reviewsBtn = document.querySelectorAll(".continue");
+const hidden = document.querySelectorAll(".hidden");
+reviewsBtn.forEach(function(item){
+    item.addEventListener("click",function(){
+		let cur = item.getAttribute("data-tab").split('_')[1] //порядковий номер кнопки/тексту
+		for(var i = 1; i <= reviewsBtn.length; i++){
+			const curBtn = reviewsBtn[i-1];
+			const curTab = hidden[i-1];
+			if( i == cur){
+				if(	curBtn.classList.contains('active')){
+					curBtn.classList.remove("active");
+					curTab.classList.remove("no-hidden");
+				}else{
+					curBtn.classList.add("active");
+					curTab.classList.add("no-hidden");
+				};
+			}else{
+				if( curBtn.classList.contains('active')){
+					curBtn.classList.remove("active");
+					curTab.classList.remove("no-hidden");
+				}
+			}
+		}
+    });
+} );
