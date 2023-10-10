@@ -1956,3 +1956,145 @@ body {
     height: 430px;
   }
 }
+.map {
+  height: 650px;
+  position: relative;
+}
+
+.map-bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.map_content {
+  position: absolute;
+  top: 70px;
+  left: 200px;
+  z-index: 1;
+  padding: 50px 70px 70px 70px;
+  border-radius: 5px;
+  border: 1px solid #EAEAEA;
+  background: #FFF;
+  box-shadow: 0px 16px 51px 0px rgba(0, 0, 0, 0.11);
+  width: 521px;
+  height: 511px;
+}
+
+.map_title {
+  text-align: left;
+  margin-bottom: 70px;
+  position: relative;
+}
+.map_title::after {
+  position: absolute;
+  content: "";
+  width: 26px;
+  height: 1px;
+  bottom: -100%;
+  left: 0;
+  background: #008139;
+}
+
+.map_content-info {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.map_content-info a {
+  align-items: start;
+  display: flex;
+}
+.map_content-info span {
+  color: #363434;
+  font-size: 18px;
+  margin-left: 20px;
+}
+.map_content-info .clock-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.bloc-social {
+  margin-top: 30px;
+  justify-content: right;
+  display: flex;
+  gap: 13px;
+}
+
+.map_tree-left {
+  position: absolute;
+  bottom: -80px;
+  left: -30px;
+  z-index: 2;
+}
+
+.map_tree-right {
+  position: absolute;
+  bottom: -160px;
+  right: 0;
+}
+
+@media (max-width: 1300px) {
+  .map_tree-right,
+  .map_tree-left {
+    display: none;
+  }
+  .map_content {
+    left: 20px;
+    width: 500px;
+    height: 500px;
+  }
+}
+@media (max-width: 768px) {
+  .map_content {
+    position: static;
+    margin: 0 auto;
+    transform: translateY(-190px);
+    padding: 40px 40px 30px 40px;
+    width: 354px;
+    height: 410px;
+  }
+  .map_title {
+    margin-bottom: 40px;
+  }
+  .map_title::after {
+    bottom: -50%;
+  }
+  .map_content-info {
+    gap: 20px;
+  }
+  .map_content-info span {
+    font-size: 16px;
+    line-height: 25px;
+    margin-left: 12px;
+  }
+}
+@media (max-width: 480px) {
+  .map {
+    height: 450px;
+  }
+  .map_content {
+    padding: 30px 40px 30px 64px;
+    width: 300px;
+    height: 359px;
+  }
+  .map_title {
+    text-align: center;
+  }
+  .map_title::after {
+    left: 42%;
+  }
+  .map_content-info {
+    gap: 10px;
+  }
+  .map_content-info span {
+    font-size: 13px;
+  }
+  .bloc-social {
+    justify-content: start;
+    margin-top: 25px;
+    gap: 13px;
+  }
+}
