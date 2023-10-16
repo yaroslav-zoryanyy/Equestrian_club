@@ -71,9 +71,16 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    z-index: 99;
     .social{
         display: flex;
         gap: 10px;
+        z-index: 99;
+        .svg{
+            &:hover{
+                fill: green;
+            }
+        }
     }
 }
 .reviews_swiper{

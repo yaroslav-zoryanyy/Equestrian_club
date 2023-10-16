@@ -16,7 +16,8 @@
 .banner_info{
     position: relative;
     text-align: left;
-    transform: translateY(-99px);
+    transform: translateY(-135px);
+    z-index: 2;
 }
 .banner_info-title{
     max-width: 730px;
@@ -51,29 +52,11 @@
         background-color: #8F8F8F;
     }
 }
-.btn-primari{
-    position: relative;
-    text-transform: uppercase;
-    font-family: $font-Montserrat;
-    font-weight: 600;
-    line-height: 32px;
-    font-size: 15px;
-    letter-spacing: 1.05px;
-    color: #6A5300;
-    padding: 21px 75px;
-    border-radius: 5px;
-    background: linear-gradient(180deg, rgb(255 223 0 / 44%) 0%, #ffc700 100%);
-    &::after{
-        position: absolute;
-        content: "";
-        width: 100%;
-        height: 100%;
-        top: 5px;
-        left: 0;
-        z-index:-1;
-        border-radius: 5px;
-        background: linear-gradient(180deg, #ffdf0066 0%, #ad9029 100%);
-    }
+.banner_info-link{
+    transition: all 0.3s ease-in;
+}
+.banner_info-link:hover{
+    text-decoration: underline;
 }
 .banner_img {
     transform: translate(0px,5px);

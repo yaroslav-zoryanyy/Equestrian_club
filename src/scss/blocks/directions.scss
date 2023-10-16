@@ -21,6 +21,10 @@
     background: #FFF;
     box-shadow: 0px 14px 30px 0px rgba(0, 0, 0, 0.07);
     width: 370px;
+    transition: all 0.3s;
+    &:hover{
+        transform: scale(1.1);
+    }
 }
 .directions_img{
     transform: translateY(-25px);
@@ -115,12 +119,13 @@
     }
     .directions_content{
         padding-top: 50px;
-        gap: 30px;
+        gap: 40px 10px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
+        align-items: normal;
     }
     .directions_content-bloc{
-        width: 354px;
+        width: 93%;
     }
     .directions_img{
         width: 304px;
@@ -142,10 +147,10 @@
         padding-top: 40px;
         gap: 40px 10px;
     }
-    .directions_content-bloc{
-        width: 230px;
-        height: 290px;
-    }
+    // .directions_content-bloc{
+    //     width: 230px;
+    //     height: 290px;
+    // }
     .directions_img{
         width: 200px;
         height: 130px;

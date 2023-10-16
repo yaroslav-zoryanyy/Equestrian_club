@@ -26,35 +26,6 @@ Menu.forEach(function(item){
         List.classList.toggle('active');
     });
 });
-//Акордеон (тестовий)
-// const reviewsBtn = document.querySelectorAll(".continue");
-// const hidden = document.querySelectorAll(".hidden");
-// reviewsBtn.forEach(function(item){
-//     item.addEventListener("click",function(){
-//         let currentBtn = item;
-//         let TabId = currentBtn.getAttribute("data-tab");
-//         let currentTab = document.querySelector(TabId);
-//         if( ! currentTab.classList.contains('active')){
-//             reviewsBtn.forEach(function(item){
-//                 item.classList.remove("active");
-//             });
-//             hidden.forEach(function(item){
-//                 item.classList.remove("no-hidden");
-//             });
-// 			currentBtn.classList.add("active");
-// 			currentTab.classList.add("no-hidden");
-// 			currentBtn.addEventListener("click",function(){
-// 				if(	currentBtn.classList.contains('active')){
-// 					currentBtn.classList.remove("active");
-// 					currentTab.classList.remove("no-hidden");
-// 				}else{
-// 					currentBtn.classList.add("active");
-// 					currentTab.classList.add("no-hidden");
-// 				}
-// 			});
-//         };
-//     });
-// } );
 const reviewsBtn = document.querySelectorAll(".continue");
 const hidden = document.querySelectorAll(".hidden");
 reviewsBtn.forEach(function(item){
@@ -80,3 +51,13 @@ reviewsBtn.forEach(function(item){
 		}
     });
 } );
+// Картинка у новому вікні
+var cards = document.querySelectorAll('.visitors_slide-wrapper');
+cards.forEach((card) => {
+	let img = card.querySelector('.visitors-slide--img')
+	let span = card.querySelector('.test')
+	
+	span.addEventListener('click', () => {
+		window.open(img.getAttribute('src'), '_top ');
+	})
+})

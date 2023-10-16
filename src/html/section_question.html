@@ -8,11 +8,19 @@
                     или вы можете записаться на бесплатное
                     пробное занятие
                 </p>
-                <form action="submit" class="question-form">
-                    <input type="text" maxlength="20" placeholder="Ваше имя" class="question-input--text">
-                    <input type="tel" maxlength="10" placeholder="Ваш телефон" class="question-input--tel">
-                    <button class="btn-primari">Задать вопрос</button>
-                    <div class="question-checkbox">
+                <form action="#" class="question-form">
+                    <div class="input-group">
+                        <input type="text" id="myInput" required="required" class="input-group__input" />
+                        <label class="input-group__label" for="myInput">Ваше имя</label>
+                      </div>
+                    <div class="input-group">
+                        <input type="text" id="myInput2" required="required" class="input-group__input"/>
+                        <label class="input-group__label" for="myInput2">Ваш телефон</label>
+                    </div>
+
+
+                      <button class="btn-primari">Задать вопрос</button>
+                      <div class="question-checkbox">
                         <label class="container-checkbox">
                             <input type="checkbox" checked="checked">
                             <span class="checkmark"></span>
@@ -23,6 +31,12 @@
                         </label>
                     </div>
                 </form>
+                <!-- <form action="submit" class="question-form">
+                    <input type="text" maxlength="20" placeholder="Ваше имя" class="question-input--text">
+                    <input type="tel" maxlength="10" placeholder="Ваш телефон" class="question-input--tel">
+                    
+                    
+                </form> -->
             </div>
             <picture>   
                 <source srcset="img/question-girl--mobile.png" media="(max-width: 1000px)">

@@ -58,6 +58,12 @@
     justify-content: right;
     display: flex;
     gap: 13px;
+    img{
+        transition: all 0.3s;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
 }
 .map_tree-left{
     position: absolute;
