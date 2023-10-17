@@ -1,10 +1,5 @@
 @charset "UTF-8";
-
-/* Reset and base styles  */
-
-@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;
-
-700&family=IBM+Plex+Sans:wght@500;700&family=Montserrat:wght@600&family=Philosopher:wght@400;700&family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=IBM+Plex+Sans:wght@500;700&family=Montserrat:wght@600&family=Philosopher:wght@400;700&family=Roboto:wght@300;400;500;700;900&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -368,12 +363,9 @@ body {
   width: 16px;
   height: 16px;
 }
-
-.no-webp .banner{
-  background: url(/img/banner-fon.png); }
-
 .banner {
   position: relative;
+  background: url(img/banner-fon.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -389,15 +381,15 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 235px;
+  padding-top: 290px;
 }
 
 .banner_info {
   position: relative;
   text-align: left;
-  -webkit-transform: translateY(-135px);
-      -ms-transform: translateY(-135px);
-          transform: translateY(-135px);
+  -webkit-transform: translateY(-100px);
+      -ms-transform: translateY(-100px);
+          transform: translateY(-100px);
   z-index: 2;
 }
 
@@ -405,7 +397,7 @@ body {
   max-width: 730px;
   font-family: "Philosopher", sans-serif;
   font-weight: 700;
-  font-size: 57px;
+  font-size: 51px;
   line-height: 107%;
   color: #000;
   margin-bottom: 40px;
@@ -1581,7 +1573,7 @@ body {
   }
 
   .clouds {
-    bottom: 35px;
+    bottom: 0px;
   }
 
   .seagull {
