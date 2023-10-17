@@ -12,6 +12,9 @@
 	<link rel="manifest" href="img/site.webmanifest">
 	<link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css?_v=20230911100055"/>
+	<!-- <link rel="stylesheet" href="css/animate.css"> -->
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
 </head>
@@ -59,7 +62,7 @@
 		<main>
 			<section class="banner">
     <div class="container">
-        <div class="banner_inner">
+        <div class="banner_inner animate__animated animate__backInDown">
             <div class="banner_info">
                 <h2 class="banner_info-title">Окунитесь в мир лошадей вместе с нами</h2>
                 <p class="banner_info-subtitle">Уроки верховой езды, фотосессии и мероприятия в частном конном клубе <a href="https://www.google.com/maps/place/%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+%D0%A0%D0%BE%D1%81%D1%96%D1%8F/@59.9443423,30.0964887,10.08z/data=!4m6!3m5!1s0x4696378cc74a65ed:0x6dc7673fab848eff!8m2!3d59.9310584!4d30.3609096!16zL20vMDZwcjY?entry=ttu" class="banner_info-link">г. Санкт-Петербург</a></p>
@@ -73,15 +76,15 @@
     <img src="/img/banner-amber.png" alt="amber" class="amber">
     <img src="/img/banner-smolHours.png" alt="hourse" class="hourse">
     <img src="/img/banner-tree.png" alt="tree" class="tree">
-    <img src="/img/banner-left-tree.png" alt="tree" class="tree-left">
-    <img src="/img/banner-right-tree.png" alt="tree" class="tree-right">
+    <img src="/img/banner-left-tree.png" alt="tree" class="tree-left animate__animated animate__fadeInLeft">
+    <img src="/img/banner-right-tree.png" alt="tree" class="tree-right animate__animated animate__fadeInRight">
     <img src="/img/banner-footer.png" alt="clouds" class="clouds">
     <img src="/img/banner-seagull.png" alt="seagull" class="seagull">
 </section>
 			<section class="about">
     <div class="container">
-        <div class="about_inner">
-            <h2 class="title">
+        <div class="about_inner wow animate__animated animate__lightSpeedInLeft">
+            <h2 class="title  wow animate__animated animate__lightSpeedInLeft ">
                 О нашем клубе
             </h2>
             <div class="about_blocs">
@@ -142,7 +145,7 @@
 </section>
 			<section class="advantages">
     <div class="container">
-        <div class="advantages_inner">
+        <div class="advantages_inner wow animate__animated animate__lightSpeedInRight">
             <h2 class="title">Почему нас выбирают</h2>
             <p class="subtitle">Подзаголовок блока</p>
             <div class="advantages_content">
@@ -184,7 +187,7 @@
 </section>
 			<section class="directions">
     <div class="container">
-        <div class="directions_inner">
+        <div class="directions_inner wow animate__animated animate__lightSpeedInLeft">
             <h2 class="title">Направления клуба</h2>
             <p class="subtitle">Подзаголовок блока</p>
             <div class="directions_content">
@@ -242,8 +245,8 @@
 </section>
 			<section class="gallery">
     <div class="gallery_inner">
-        <div class="visitors">
-            <h2 class="title visitors_title">Наши посетители</h2>
+        <div class="visitors wow visitors_title animate__animated animate__lightSpeedInRight">
+            <h2 class="title">Наши посетители</h2>
             <div class="swiper visitors_swiper">
                 <div class="swiper-wrapper visitors_wrapper">
                     <div class="swiper-slide visitors_slide">
@@ -665,8 +668,8 @@
                 </div>
             </div>
         </div>
-        <div class="horses">
-            <h2 class="title horses_title">Наши лошади</h2>
+        <div class="horses wow visitors_title animate__animated animate__lightSpeedInLeft">
+            <h2 class="title horses_title animate__animated animate__lightSpeedInLeft">Наши лошади</h2>
             <div class="swiper horses_swiper">
                 <div class="swiper-wrapper horses_wrapper">
                     <div class="swiper-slide horses_slide">
@@ -756,8 +759,6 @@
                         <input type="text" id="myInput2" required="required" class="input-group__input"/>
                         <label class="input-group__label" for="myInput2">Ваш телефон</label>
                     </div>
-
-
                       <button class="btn-primari">Задать вопрос</button>
                       <div class="question-checkbox">
                         <label class="container-checkbox">
@@ -770,12 +771,6 @@
                         </label>
                     </div>
                 </form>
-                <!-- <form action="submit" class="question-form">
-                    <input type="text" maxlength="20" placeholder="Ваше имя" class="question-input--text">
-                    <input type="tel" maxlength="10" placeholder="Ваш телефон" class="question-input--tel">
-                    
-                    
-                </form> -->
             </div>
             <picture>   
                 <source srcset="img/question-girl--mobile.png" media="(max-width: 1000px)">
@@ -789,7 +784,7 @@
     <img src="img/question-tree.png" alt="tree" class="question-tree">
 </section>
 			<section class="reviews">
-    <div class="reviews_inner">
+    <div class="reviews_inner wow  animate__animated animate__zoomIn">
         <h2 class="title reviews_title">О нас говорят клиенты</h2>
         <div class="swiper reviews_swiper">
             <div class="swiper-wrapper reviews_wrapper">
@@ -1092,7 +1087,7 @@
         </div>
     </div>
 </section>
-			<section class="map">
+			<section class="map wow animate__animated animate__slideInUp">
     <picture>
         <source srcset="img/map-bg--mobile.png" media="(max-width: 768px)">
         <img src="img/map-bg.png" alt="map-bg" class="map-bg">
@@ -1166,7 +1161,7 @@
                     <a href="#" class="footer_link">Контакты</a>
                 </li>
             </ul>
-            <button class="footer_btn">Заказать звонок</button>
+            <button class="footer_btn"><img src="img/tel.svg" alt="tel" class="footer_tel"><span> Заказать звонок</span></button>
             <a href="#" class="home_link--mobile">
                 <img src="img/home_link-logo.png" alt="logo">
                 <img src="img/home_link-text.png" alt="logo-text">
@@ -1181,6 +1176,18 @@
     </div>
 </footer>
 		<script src="js/app.min.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script>wow = new WOW(
+			{
+			boxClass:     'wow',      // default
+			animateClass: 'animated', // default
+			offset:       0,          // default
+			mobile:       false,       // default
+			live:         true        // default
+		  }
+		  )
+		  wow.init();
+		</script>
 		<script type="module">
 			import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.mjs'
 			const swiper = new Swiper('.visitors_swiper',{

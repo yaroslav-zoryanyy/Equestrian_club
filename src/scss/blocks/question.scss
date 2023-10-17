@@ -30,16 +30,6 @@
     max-width: 370px;
     margin-bottom: 30px;
 }
-.question-input--text,
-.question-input--tel{
-    padding: 20px 21px;
-    width: 330px;
-    height: 61px;
-    border-radius: 5px;
-    border: 1px solid #8F8F8F;
-    background: #FFF;
-    margin-bottom:20px;
-}
 .question-form{
     display: flex;
     flex-direction: column;
@@ -223,8 +213,7 @@
         font-size: 13px;
         margin-bottom: 25px;
     }
-    .question-input--tel,
-    .question-input--text{
+    .input-group__input{
         width: 300px;
         height: 55px;
         padding: 19px;
@@ -256,7 +245,7 @@
 }
 @media (max-width:480px){
     .question_content {
-        padding: 30px 34px ;
+        padding: 30px 20px ;
         align-items: center;
     }
     .question_title{
@@ -268,10 +257,5 @@
     }
     .question-form{
         align-items: center;
-    }
-    .question-input--tel,
-    .question-input--text{
-        width: 225px;
-        height: 50px;
     }
 }
